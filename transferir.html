@@ -54,7 +54,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-10 mx-auto">
-                <form class="custom-form ticket-form mb-5 mb-lg-0" action="/auth/transferir" method="post">
+                <form class="custom-form ticket-form mb-5 mb-lg-0" action="/auth/transferir" method="post" id="transferForm">
                     <input type="hidden" name="codigo" value="{{ingresso.codigo}}">
                     <h6>ID do Usuário para Transferência</h6>
                     <input class="form-control form-control-lg" name="usuariopart_id" id="usuariopart_id" type="text" required>
@@ -128,6 +128,18 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.getElementById('transferForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Evita o envio do formulário padrão
+
+            // Simula o processamento do formulário (aqui você pode adicionar lógica de validação, etc.)
+            // Como é um exemplo simples, vamos apenas redirecionar após 1 segundo
+            setTimeout(function () {
+                window.location.href = 'homeuser.html'; // Redireciona para a página homeuser.html
+            }, 1000); // Tempo em milissegundos (1 segundo)
+        });
+    </script>
 </body>
 
 </html>
