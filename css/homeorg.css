@@ -1,0 +1,38 @@
+/* Estilos customizados */
+.navbar-brand {
+    font-family: 'Outfit', sans-serif; /* Aplicando a fonte personalizada */
+    font-weight: bold;
+    font-size: 24px; /* Tamanho da fonte da marca */
+}
+
+.nav-link {
+    color: #FFFFFF; /* Cor dos links do navbar */
+}
+
+.nav-link:hover {
+    color: #CCCCCC; /* Cor ao passar o mouse sobre os links */
+}
+
+.navbar-text {
+    font-size: 18px; /* Tamanho do texto de boas-vindas */
+}
+
+.navbar-nav {
+    align-items: center; /* Alinhar itens verticalmente */
+}
+
+.navbar-toggler {
+    border-color: #FFFFFF; /* Cor do ícone do botão de toggler */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    /* Ícone do botão de toggler personalizado */
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: #343a40; /* Cor de fundo do menu collapse em telas menores */
+        padding: 10px; /* Espaçamento interno do menu collapse */
+    }
+}

@@ -1,0 +1,30 @@
+.custom-button{
+    background-color: #EE5007;
+    border: none;
+    margin: 30px 0 30px 0;
+}
+/* Estilos personalizados */
+.center-text {
+    text-align: center;
+}
+
+
+
+.main-text {
+    text-align: left;
+    margin-top: 15px ;
+}
+/* Removido o sublinhado */
+/* .underline {
+    text-decoration: underline;
+} */
+
+/* Ajuste de tamanho da fonte para torná-la mais discreta */
+h1 {
+    font-size: 24px;
+}
+
+#comprar{
+    background-color: red;
+    border: red;
+}

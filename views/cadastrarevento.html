@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Cadastrar Evento</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="../css/templatemo-festava-live.css" rel="stylesheet">
+
+    <link href="../css/cadastrarevento.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand custom" href="homeorg.html">
+                Sextou
+            </a>
+
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-10 mx-auto">
+                <form class="custom-form ticket-form mb-5 mb-lg-0" action="/auth/cadastrarevento" method="post"
+                    enctype="multipart/form-data">
+                    <h6>Nome do Evento</h6>
+                    <input class="form-control form-control-lg" name="nome" id="nome" type="text" placeholder="Nome"
+                        required>
+                    <h6>Data do evento</h6>
+                    <input class="form-control form-control-lg" name="data" id="data" type="date" required>
+                    <h6>Preço Evento</h6>
+                    <input class="form-control form-control-lg" name="preco" id="preco" type="number" placeholder="R$:"
+                        required>
+                    <h6>Endereço Evento</h6>
+                    <input class="form-control form-control-lg" name="endereco" id="endereco" type="text"
+                        placeholder="Endereço" required>
+                    <h6>Descrição</h6>
+                    <input class="form-control form-control-lg" name="descricao" id="descricao" type="text" required>
+                    <h6>Quantidade de Ingressos</h6>
+                    <input class="form-control form-control-lg" name="quantidade" id="quantidade" type="number"
+                        required>
+                    <h6>Imagem</h6>
+                    <input class="form-control form-control-lg" name="foto" id="foto" type="file" required>
+                    <div class="d-flex justify-content-center">
+                        <a href="homeorg.html" class="btn btn-primary form-control custom-button">Cadastrar</a>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+    <footer class="site-footer mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <h2 class="text-white mb-lg-0">Sextou</h2>
+                </div>
+                <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
+                    <ul class="social-icon d-flex justify-content-lg-end">
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link">
+                                <span class="bi-twitter"></span>
+                            </a>
+                        </li>
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link">
+                                <span class="bi-apple"></span>
+                            </a>
+                        </li>
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link">
+                                <span class="bi-instagram"></span>
+                            </a>
+                        </li>
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link">
+                                <span class="bi-youtube"></span>
+                            </a>
+                        </li>
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link">
+                                <span class="bi-pinterest"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-12 mt-5">
+                        <p class="copyright-text">Copyright © 2024 Sextou</p>
+                    </div>
+                    <div class="col-lg-8 col-12 mt-lg-5">
+                        <ul class="site-footer-links">
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Termos &amp; Condições</a>
+                            </li>
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Política de Privacidade</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Cadastrar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-icons.css" rel="stylesheet">
+    <link href="../css/templatemo-festava-live.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/pix.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand custom" href="index.html">Sextou</a>
+            </div>
+        </nav>
+
+        <section class="ticket-section section-padding">
+            <div class="section-overlay"></div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-10 mx-auto">
+                        <form class="custom-form ticket-form mb-5 mb-lg-0" action="/auth/register" method="post" role="form" id="registerForm">
+                            <h2 class="text-center mb-4">Cadastro</h2>
+
+                            <h6>Nome Completo</h6>
+                            <input name="name" id="name" class="form-control" placeholder="Nome Completo" required>
+
+                            <h6>Telefone</h6>
+                            <input name="phone" id="phone" class="form-control" placeholder="Telefone" required>
+
+                            <h6>Email</h6>
+                            <input name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email" required>
+
+                            <h6>CPF</h6>
+                            <input name="cpf" id="cpf" class="form-control" placeholder="CPF" required>
+
+                            <h6>Senha</h6>
+                            <input type="password" name="password" id="password" class="form-control" placeholder="Senha" required>
+
+                            <h6>Confirmar Senha</h6>
+                            <input type="password" name="passwordConfirm" id="passwordConfirm" class="form-control" placeholder="Confirmar Senha" required>
+
+                            <div class="col-lg-4 col-md-10 col-8 mx-auto">
+                                <button type="submit" class="btn btn-primary form-control">Cadastrar</button>
+                            </div>
+                            <div class="text-center mt-3">
+                                <a href="registera.html" class="link-cadastro text-decoration-none text-dark">Organizador? Cadastre aqui!
+                                    <span class="text-cadastro"></span></a>
+                            </div>
+                            <div class="text-center mt-3">
+                                <a href="login.html" class="link-cadastro text-decoration-none text-dark">Já possuo conta
+                                    <span class="text-cadastro"></span></a>
+                            </div>
+                            <br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-12 mt-5">
+                        <p class="copyright-text">Copyright © 2024 Sextou</p>
+                    </div>
+
+                    <div class="col-lg-8 col-12 mt-lg-5">
+                        <ul class="site-footer-links">
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Termos &amp; Condições</a>
+                            </li>
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Política de Privacidade</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="http://localhost:5000/js/jquery.min.js"></script>
+    <script src="http://localhost:5000/js/bootstrap.min.js"></script>
+    <script src="http://localhost:5000/js/jquery.sticky.js"></script>
+    <script src="http://localhost:5000/js/click-scroll.js"></script>
+    <script src="http://localhost:5000/js/custom.js"></script>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            // Simulate successful form submission
+            setTimeout(function () {
+                window.location.href = 'login.html';
+            }, 500); // Adjust the delay as needed
+        });
+    </script>
+
+</body>
+
+</html>
